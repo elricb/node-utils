@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "author": "elricb",
+  "license": "ISC",
+  "name": "@elricb/node-utils",
+  "description": "helper functions for node",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -r ./dist && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "10.x",
+    "typescript": "5.x"
+  },
+  "dependencies": {
+    "csv-parse": "5.x",
+    "split2": "4.x",
+    "tar": "7.x"
+  }
+}
