@@ -2,16 +2,26 @@
 
 Personal node helper functions.
 
+## Types
+
+- CsvArray
+- CsvJson
+- MatchArray
+
 ## Functions
 
-### PromiseAllSequential
+- convertCsvArrayToCsvJson
+- convertCsvFileToCsvArray
+- dirHome
+- execSync
+- execSyncCode
+- fileTransformRemoveMatches
+- promiseAllSequential
+- spawnToFile
+- transformRemoveMatches
 
-Run a bunch of promises sequentially.
+## Library Details
 
-```js
-PromiseAllSequential([promise, promise, /*...*/], (results) => {
-  // Code for each promise reponse.
-});
 ```
-
-
+npm view @elricb/node-utils
+```

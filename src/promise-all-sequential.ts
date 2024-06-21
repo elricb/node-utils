@@ -1,6 +1,9 @@
 /* Format: [() => new Promise(), () => new Promise()] */
-const promiseAllSequential = (a, callback) =>
-  a.reduce((previousPromise, nextFunction) => {
+function promiseAllSequential(
+  a: Array<() => Promise<any>>,
+  callback: (x: any) => void,
+): Promise<void> {
+  return a.reduce((previousPromise, nextFunction) => {
     return previousPromise.then((o) => {
       if (callback) {
         callback(o);
@@ -8,5 +11,6 @@ const promiseAllSequential = (a, callback) =>
       return nextFunction();
     });
   }, Promise.resolve());
+}
 
 export default promiseAllSequential;
