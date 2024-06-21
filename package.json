@@ -1,6 +1,6 @@
 {
   "name": "@elricb/node-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "personal helper functions for node",
   "license": "MIT",
   "author": "elricb (https://github.com/elricb)",
